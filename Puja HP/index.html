@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Puja Resturant</title>
 
+</head>
+<body>
+  <main class="main">
+    <div class="slide">
+      <div class="slide-container">
+        <nav class="pc_nav" id="pc_nav">
+          <a href="#" class="nav_link">HOME</a>
+          <a href="#flex_container" class="nav_link">MENU</a>
+          <a href="about.html" class="nav_link">ABOUT</a>
+        </nav>
+        <img src="img/bg_1.JPG" />
+        <div class="text"><font>ラムチョップ</font></div>
+      </div>
+      <div class="slide-container">
+        <nav class="pc_nav" id="pc_nav">
+          <a href="#" class="nav_link">HOME</a>
+          <a href="#flex_container" class="nav_link">MENU</a>
+          <a href="about.html" class="nav_link">ABOUT</a>
+        </nav>
+        <img src="img/a_set.JPG" />
+        <div class="text"><font>ディナーセット</font></div>
+      </div>
+      <div class="slide-container">
+        <nav class="pc_nav" id="pc_nav">
+          <a href="#" class="nav_link">HOME</a>
+          <a href="#flex_container" class="nav_link">MENU</a>
+          <a href="about.html" class="nav_link">ABOUT</a>
+        </nav>
+        <img src="img/18.chicken briyani-min.JPG" />
+        <div class="text"><font>チキンビリヤニ</font></div>
+      </div>
+      <div class="slide-container">
+        <nav class="pc_nav" id="pc_nav">
+          <a href="#" class="nav_link">HOME</a>
+          <a href="#flex_container" class="nav_link">MENU</a>
+          <a href="about.html" class="nav_link">ABOUT</a>
+        </nav>
+        <img src="img/curry_set.JPG" />
+        <div class="text"><font>カレー種類</font></div>
+      </div>
+      <div class="open_time">
+        OPEN: 11:00 - 23:00
+      </div>
+      <h1 class="top_menu">
+        <a href="#takeout_container" class="menu_btn">お持ち帰り</a>
+      </h1>
+    </div>
+    <!--mobile_nav-->
+    <nav class="mobile_nav" id="mobile_nav">
+      <button id="openMenu"><i class="fa fa-bars"></i></button>
+      <div class="mobile_menu" id="mobile_menu">
+        <a href="javascript:void(0);" onclick="closeMenu()" class="right"><i class="fa fa-close"></i></a>
+        <a href="#" onclick="closeMenu()">HOME</a>
+        <a href="#flex_container" onclick="closeMenu()">MENU</a>
+        <a href="about.html" onclick="closeMenu()">ABOUT</a>  
+      </div>
+    </nav>
+    <!--discribe about curry-->
+    <div class="flex_container">
+      <div class="flex">
+        <div class="flex_2">
+          <p style="font-size: 16px;">この『モモ』という料理は、元々はチベットで発祥し、ネパールに伝わった料理。多くの日本人がネパール料理として紹介していますが、実際には、チベットから伝わり、ネパール国内でも一般的に食されている、という説明が正しい解釈になります。トマトベースの辛いタレを付けて食べると美味しいです。
+            MOMOとはネパール式の餃子のことで、ネパールではかなり人気の名物料理です。 当店のMOMOは「チキンMOMO」で、チキン・玉ねぎ・にんにく・コリアンダーを具材にカレー風味に仕上げた一品です。 焼かずに蒸して調理しますので、餃子のような小籠包のような味わいです。</p>
+        </div>
+        <div class="flex_1">
+          <img id="ch" class="fade" src="img/momo.JPG" />
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex_1">
+          <img id="ch" class="fade" src="img/bg_3.JPG" />
+        </div>
+        <div class="flex_2">
+          <p style="font-size: 16px;">タンドリーチキンとはインド料理のひとつで、ヨーグルトやさまざまなスパイスに鶏肉を漬け込んで作る料理です。カレーの風味とヨーグルトのまろやかさが印象的な味わいで、大人から子どもまで、幅広い世代に受け入れられやすいでしょう。           
+            本場であるインドでは、複数のスパイスとタンドールという土窯を使うことが特徴です。         
+            主な食材は、鶏肉・スパイス・ヨーグルト・ライム汁など。スパイスは好みにもよりますが、ターメリック・コリアンダー・カイエンペッパー・ガラムマサラなどを使用するのが一般的です。鶏肉を、ヨーグルトや調味料を混ぜたたれに漬け込み、串に刺してからタンドールで香ばしく焼いて作ります。</p>
+        </div>
+      </div>
+    </div>
+
+    <!--takeout(Start)-->
+    <div class="container">
+      <div id="takeout_container">
+        <h1 class="menu_head">お持ち帰り</h1>
+        <div id="takeout">
+          <div class="menu_title">
+            <button class="list active" onclick="menuClick('takeout', 0)">ランチ </button>
+            <button class="list" onclick="menuClick('takeout', 1)">ディナー</button>
+          </div>
+          <div id="menu_content" class="menu_content">
+            <div id="lunch" class="lunch">    
+              <table class="menu_table">
+                <tr><td class="info">** 1-8ランチセットにはナン又はライスが付きます。** <span>¥600</span></td></tr>
+                <tr><td>1. 豆カレーセット</td></tr>
+                <tr><td>2. 野菜カレーセット</td></tr>
+                <tr><td>3. チキンカレーセット</td></tr>
+                <tr><td>4. キーマカレーセット</td></tr>
+                <tr><td>5. マトンカレーセット</td></tr>
+                <tr><td>6. エビカレーセット</td></tr>
+                <tr><td>7. ほうれん草チキンセット</td></tr>
+                <tr><td>8. 本日のカレー<span>SPECIAL!</span></td></tr>
+              </table> 
+            </div>
+            <div id="dinner" class="dinner">
+              <table class="menu_table">
+                <tr><td class="info">* 1-14 カレーセットにはナン又はライスが付きます。*</td></tr>
+                <tr><td>1. ベーガンマサラ</td><td>¥890</td></tr>
+                <tr><td>2. ビンディーマサラ</td><td>¥800</td></tr>
+                <tr><td>4. ミックス野菜</td><td>¥800</td></tr>
+                <tr><td>5. キーマほうれん草</td><td>¥900</td></tr>
+                <tr><td>6. キーマエッグ</td><td>¥880</td></tr>
+                <tr><td>7. チキンマサラ</td><td>¥900</td></tr>
+                <tr><td>8. ほうれん草チキン</td><td>¥950</td></tr>
+                <tr><td>9. バターチキン</td><td>¥1050</td></tr>
+                <tr><td>10. バターエビカレー</td><td>¥1100</td></tr>
+                <tr><td>11. ラムマサラカレー</td><td>¥950</td></tr>
+                <tr><td>12. ラムとほうれん草</td><td>¥990</td></tr>
+                <tr><td>13. グリーンカレー</td><td>¥1050</td></tr>
+                <tr><td>14. チャナマサラ</td><td>¥798</td></tr>
+                <tr><td>15. 豆カレー</td><td>¥750</td></tr>
+                <tr><td>16. サグパニール</td><td>¥1090</td></tr>
+              </table>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    <!--takeout(End)-->
+    </div>
+    <!--menu part-->
+    <div id="flex_container" class="flex_container">
+      <!--simple lunch flex-->
+      <h1 class="menu_head">シンプルランチ</h1>
+      <p class="info">** 1-10ランチセットにはナン又はライス、サラダ、ドリンが付きます。**</p>
+      <div class="flex">
+        <div class="flex_2">
+          <table class="lunch_list">
+            <tr><td>1. 豆カレーセット </td><td>¥800</td></tr>
+            <tr><td>2. 野菜カレーセット </td><td>¥850</td></tr>
+            <tr><td>3. チキンカレーセット  </td><td>¥880</td></tr>
+            <tr><td>4. キーマカレーセット  </td><td>¥890</td></tr>
+            <tr><td>5. マトンカレーセット  </td><td>¥900</td></tr>
+            <tr><td>6. エビカレーセット </td><td>¥860</td></tr>
+            <tr><td>7. ほうれん草チキンセット  </td><td>¥980</td></tr>
+            <tr><td>8. バーターチキン </td><td>¥990</td></tr>
+            <tr><td>9. シーフード </td><td>¥990</td></tr>
+            <tr><td>10. 本日のカレー<span>SPECIAL!</span>  </td><td>¥990</td></tr>
+          </table>
+        </div>
+        <div class="flex_1">
+          <img id="ch" class="fade" src="img/lunch set.JPG" />
+        </div>
+      </div>
+      <!--special lunch flex-->
+      <h1 class="menu_head">スペシャルランチ</h1>
+      <div class="flex_special special_lunch">
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="img/a_set.JPG" />
+          <h3 class="set">バーベキュー セット<span>¥1100</span><p>カレー2種類、サラダ、ナン&ライス、タンドリーチキン、ソフトドリンク</p></h3>
+        </div>
+        <div class="flex_SL SL_right">
+          <img id="ch"  src="img/a_set.JPG" />
+          <h3 class="set">プージャーセット　<span>¥1300</span><p>カレー2種類、ナン&ライス、サラダ、ほうれん草炒め、タンドリーチキン、ソフトドリンク、デザート、漬物</p></h3>
+        </div>
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="img/baby set.JPG" />
+          <h3 class="set">お子様セット<span>¥780</span><p>バーターチキン(甘口)、ナン又はライス、サラダ、ソフトドリンク、デザート</p></h3>
+        </div>
+      </div>
+      <br><hr><br>
+      <!--dinner flex-->
+      <h1 class="menu_head">ディナーセット</h1>
+      <p class="info">** カレー２種類は選べます。**</p>
+      <!--set a-->
+      <div class="flex">
+        <div class="flex_1 slide_1">
+          <img id="ch" class="fade" src="img/a_set.JPG" />
+        </div>
+        <div class="flex_2 slide_2">
+          <h2 class="set">A セット　<span>¥1280</span></h2>
+          <ul>
+            <li>カレー2種類</li>
+            <li>ナン＆ライス</li>
+            <li>サラダ</li>
+            <li>ソフトドリンク</li>
+            <li>タンドリーチキン</li>
+          </ul>
+        </div>
+      </div>
+      <!--set b-->
+      <div class="flex">
+        <div class="flex_1 slide_1">
+          <img id="ch" class="fade" src="img/b_set.JPG" />
+        </div>
+        <div class="flex_2 slide_2">
+          <h2 class="set">B セット　<span>¥1500</span></h2>
+          <ul>
+            <li>カレー2種類</li>
+            <li>ナン＆ライス</li>
+            <li>サラダ</li>
+            <li>ビール</li>
+            <li>サモサ</li>
+            <li>デザート</li>
+            <li>タンドリーチキン</li>
+          </ul>
+        </div>
+      </div>
+      <!--set c-->
+      <div class="flex">
+        <div class="flex_1 slide_1">
+          <img id="ch" class="fade" src="img/diner c set.JPG" />
+        </div>
+        <div class="flex_2 slide_2">
+          <h2 class="set">C セット　<span>¥2190</span></h2>
+          <ul>
+            <li>カレー2種類</li>
+            <li>チーズナン</li>
+            <li>ナン＆ライス</li>
+            <li>サラダ</li>
+            <li>ビール又はソフトドリンク</li>
+            <li>シークカバブ</li>
+            <li>サモサ</li>
+            <li>デザート</li>
+          </ul>
+        </div>
+      </div>
+      <!--sset d-->
+      <div class="flex">
+        <div class="flex_1 slide_1">
+          <img id="ch" class="fade" src="img/baby set.JPG" />
+        </div>
+        <div class="flex_2 slide_2">
+          <h2 class="set">お子様セット　<span>¥780</span></h2>
+          <ul>
+            <li>バターチキンカレー</li>
+            <li>ナン又はライス</li>
+            <li>サラダ</li>
+            <li>デザート</li>
+            <li>ソフトドリンク</li>
+          </ul>
+        </div>
+      </div>
+      <!--snaks-->
+      <h1 class="menu_head">スナック</h1>
+      <div class="flex_special">
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/snaks1.JPG" />
+        </div>
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/snaks3.JPG" />
+        </div>
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/malai kabap.JPG" />
+        </div>
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/slade.JPG" />
+        </div>
+      </div>
+      <!--sanks_2-->
+      <div class="flex_special">
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/chikentikka.JPG" />
+        </div>
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/sisukababu.JPG" />
+        </div>
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/sukuti.JPG" />
+        </div>
+        <div class="flex_SL">
+          <img id="ch" class="fade" src="snaks/lamp.JPG" />
+        </div>
+      </div>
+    <!--flex container(End)-->
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="flex">
+          <div class="flex_2">
+            <P><b>毎日営業やっています</b></P>
+            <p><b><i class="fa fa-hourglass-2"></i>営業時間:</b> 10:00 - 23:00</p>
+            <p><b><i class="fa fa-hourglass-3"></i>昼休み:</b> 14:00 - 17:00</p>
+            <p><i class="fa fa-phone-square"></i>080-7553-2270</p>
+            <p><i class="fa fa-envelope"></i>stha1365@gmail.com</p>
+          </div>
+          <div class="flex_1">
+            <p><a href="https://www.ubereats.com/store/%E3%82%A2%E3%82%B7%E3%82%A2%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%AF%26%E3%83%8F%E3%83%BC-%E3%83%95%E3%83%BC%E3%82%B7%E3%83%A3-asian-dining-%26-bar-puja/7_lW5A3fSqutTJ5DHAcySQ?diningMode=DELIVERY&ps=1">Uber Eats</a></p>
+            <p><a href="https://me.nu/s29956/ftpg-4dz2ll">MENU</a></p>
+            <p><a href="https://demae-can.com/shop/menu/3013962">出前館</a></p>
+          </div>
+        </div>
+
+      </div>
+      <p class="last"><b> All Rights Reserved.</b></p>
+    </div>
+  </main>
+
+
+  <script src="puja.js"></script>
+</body>
+</html>
