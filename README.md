@@ -1,1 +1,2 @@
-# Only source code is available
+#シンプルなレストランホームページ
+作成です。
